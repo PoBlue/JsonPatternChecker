@@ -6,26 +6,27 @@
 ![效果图](https://github.com/PoBlue/JsonPatternChecker/blob/master/屏幕快照%202017-03-14%20下午5.21.39.png)
 
 ## 使用方法 1
-1. 将文件 `nameChecker.js` 和要测试的文件放在同一目录下
-2. 在 HTML 文件里添加下面代码，并把路径换为 `resumeBuilder.js` 的路径
+首先，将文件 `nameChecker.js` 和要测试的文件放在同一目录下
+
+然后在 HTML 文件里添加下面代码，并把路径换为 `resumeBuilder.js` 的路径
 ```html
 <script src=“文件路径”></script>
 ```
+最后刷新网页，打开 `Chrome 的 Console` 就能看到结果了
 
-3. 刷新网页，打开 `Chrome 的 Console` 就能看到结果了
+## 使用方法2: 使用终端命令
 
-## 使用方法 2
+首先，利用命令 `git clone` 下载项目
 
-1. 下载项目
-2. 在项目的位置，利用终端 `terminal`  打入命令 `pwd` 获取文件的路径
+然后利用命令 cd ，进入到项目，打入命令 `pwd` 获取文件的路径
 ```
 $pwd
 ```
-3. 在 HTML 文件里添加下面代码，并将第 2 步获取到的路径加上文件名 `nameChecker.js` 去替换下面的文件路径
+再然后，在 HTML 文件里添加下面代码，并将第 2 步获取到的路径加上文件名 `nameChecker.js` 去替换下面的文件路径
 ```html
 <script src=“文件路径”></script>
  ```
-4. 刷新网页，打开 `Chrome 的 Console` 就能看到结果了
+最后刷新网页，打开 `Chrome 的 Console` 就能看到结果了
 
 ## 以后会改善的点
 - 提高一下文档的描述和写法
