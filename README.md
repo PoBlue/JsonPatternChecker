@@ -5,6 +5,11 @@
 
 ![效果图](https://github.com/PoBlue/JsonPatternChecker/blob/master/屏幕快照%202017-03-14%20下午5.21.39.png)
 
+## 前提
+因为是中文的，所以要在 HTML 里的 `<head>` 标签里添加以下代码支持中文 ;)
+```html
+<meta charset="utf-8">
+```
 ## 使用方法 1
 首先，将文件 `nameChecker.js` 和要测试的文件放在同一目录下
 
