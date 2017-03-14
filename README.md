@@ -1,7 +1,7 @@
 # JSON 模板检测器
 
 ##  简介
-检查 P4 项目中的 JSON 是否符合模板，效果如下：
+检查 [Udacity FEND 的 P4 项目中](https://github.com/udacity/frontend-nanodegree-resume) 的 JSON 是否符合模板，效果如下：
 
 ![效果图](https://github.com/PoBlue/JsonPatternChecker/blob/master/屏幕快照%202017-03-14%20下午5.21.39.png)
 
