@@ -3,8 +3,7 @@
 ##  简介
 检查 P4 项目中的 JSON 是否符合模板，效果如下：
 
-
-
+![效果图](https://github.com/PoBlue/JsonPatternChecker/blob/master/屏幕快照%202017-03-14%20下午5.21.39.png)
 
 ## 使用方法 1
 1. 将文件 `nameChecker.js` 和要测试的文件放在同一目录下
@@ -28,6 +27,6 @@ $pwd
  ```
 4. 刷新网页，打开 `Chrome 的 Console` 就能看到结果了
 
-## 以后必须改善的点
-- 文档的描述和写法，。。写文档的技巧还必须必须提高啊 : (
-- 最好能够做成网页版的，相信会方便不少。类似于检查 HTML 和 CSS 格式那样 
+## 以后会改善的点
+- 提高一下文档的描述和写法
+- 最好能够做成网页版的，相信会方便不少。类似于 [HTML格式检查器](https://validator.w3.org/) 或者 [CSS 格式检查器](http://csslint.net/#results) 那样 
