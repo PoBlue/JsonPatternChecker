@@ -1,3 +1,4 @@
+//JSON 的模板
 bioPattern = {
   'name': ["string"],
   'role': ["string"],
@@ -53,6 +54,7 @@ projectsPattern = {
   'display': ['function']
 }
 
+//检查模板的函数
 var DO_NOT_HAVE_KEY_MESSAGE = '缺失： %s 没有含有 %s 键值';
 var DO_NOT_MATCH_TYPE = '类型错误： %s 键值的类型应为 %s '
 
@@ -83,6 +85,21 @@ function checkType(position, value, type) {
   if ($.type(value) !== type) {
     console.log(DO_NOT_MATCH_TYPE, position, type);
   }
+}
+
+//检查对象是否存在
+var DO_NOT_HAVE_OBJECT = '对象 %s 并不存在'
+if (typeof bio === 'undefined') {
+   console.log(DO_NOT_HAVE_OBJECT, 'bio');
+} 
+if (typeof education === 'undefined') {
+   console.log(DO_NOT_HAVE_OBJECT, 'education');
+}
+if (typeof work === 'undefined') {
+   console.log(DO_NOT_HAVE_OBJECT, 'work');
+}
+if (typeof projects === 'undefined') {
+   console.log(DO_NOT_HAVE_OBJECT, 'projects');
 }
 
 checkPattern('bio', bioPattern, bio);
