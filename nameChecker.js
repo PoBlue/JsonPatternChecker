@@ -63,18 +63,20 @@ function checkPattern(name, pattern, objectToCheck) {
     if (!objectToCheck.hasOwnProperty(key)) {
       console.log(DO_NOT_HAVE_KEY_MESSAGE, name , key);
     } else {
-    	positionMsg = name + ' --> ' + key;
 
       if (pattern[key][0] == 'object') {
+        positionMsg = name + ' --> ' + key;
         checkPattern(positionMsg, pattern[key][1], bio[key]);
       } else if (pattern[key][0] == 'arrayObject') {
         if ($.type(objectToCheck[key]) === 'array') {
           for (var i = 0; i < objectToCheck[key].length; i++) {
+            positionMsg = name + ' --> ' + key;
           	var currentPositionMsg = positionMsg + "第" + i + "个";
           	checkPattern(currentPositionMsg, pattern[key][1], objectToCheck[key][i]);
           };
         };
       } else {
+        positionMsg = name + ' --> ' + key;
         checkType(positionMsg, objectToCheck[key], pattern[key][0]);
       }
     }
