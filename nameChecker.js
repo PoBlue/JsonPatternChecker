@@ -30,6 +30,27 @@ eductionPattern = {
 	'display': ["function"]
 };
 
+workPattern = {
+	'jobs': ["arrayObject", {
+		'employer': ['string'],
+		'title': ['string'],
+		'location': ['string'],
+		'dates': ['string'],
+		'description': ['string']
+	}],
+	'display': ['function']
+}
+
+projectsPattern = {
+	'projects': ["arrayObject", {
+		'title': ['string'],
+		'dates': ['string'],
+		'description': ['string'],
+		'images': ['array']
+	}],
+ 'display': ['function']
+}
+
 function checkPattern(pattern, objectToCheck) {
 	Object.keys(pattern).forEach(function(key) {
 		if (!objectToCheck.hasOwnProperty(key)) {
@@ -58,3 +79,5 @@ function checkType(value, type) {
 
 checkPattern(bioPattern, bio);
 checkPattern(eductionPattern, education);
+checkPattern(workPattern, work);
+checkPattern(projectsPattern, projects);
